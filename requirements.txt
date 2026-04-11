@@ -1,10 +1,10 @@
-# Requirements for PM2.5 / Life Expectancy / HDI Analysis
-# Python 3.10+  -  compatible with Google Colab
-#
-# Install with:
-#   !pip install -r requirements.txt
-#
-# All five libraries are pre-installed in Colab; listed for reproducibility.
+Requirements for PM2.5 / Life Expectancy / HDI Analysis
+Python 3.10+  -  compatible with Google Colab
+
+Install with:
+   !pip install -r requirements.txt
+
+All five libraries are pre-installed in Colab; listed for reproducibility.
 
 pandas>=1.5.0
 numpy>=1.23.0
