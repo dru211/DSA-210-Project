@@ -1,5 +1,5 @@
 
-# DSA 210 - PM2.5 Air Pollution, Life Expectancy & HDI Analysis
+# DSA 210 Project - PM2.5 Air Pollution, Life Expectancy & HDI Analysis
 
 ## Research Question
 
