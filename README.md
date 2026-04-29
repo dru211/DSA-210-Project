@@ -23,7 +23,7 @@ The soures of PM2.5 exposure, Life expectancy and Human Development Index are li
 
 Each dataset covers a different number of countries (PM2.5: 200, Life Expectancy: 201, HDI: 192).
 The three files are merged using an **inner join** on country name, meaning only countries
-present in **all three** datasets are kept. This results in **166 countries** in the final
+present in **all three** datasets are kept. This results in **190 countries** in the final
 dataset. Countries missing from even one source are excluded to avoid NaN values in the analysis.
 
 ---
