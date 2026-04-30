@@ -98,7 +98,7 @@ st.markdown("""
 # =============================================================
 @st.cache_data
 def load_data():
-    df = pd.read_csv("merged_dataset_2020.csv")
+    df = pd.read_csv("data/merged_dataset_2020.csv")
     df = df.rename(columns={"PM2.5": "PM2_5"})
     return df
 
