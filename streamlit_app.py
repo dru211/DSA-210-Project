@@ -59,6 +59,14 @@ st.markdown("""
         margin: 1.5rem 0;
         font-size: 1.02rem;
     }
+    .callout {
+        background: linear-gradient(135deg, #f3f4e8 0%, #e0e3c8 100%);
+        border-left: 5px solid #84a02b;
+        padding: 1rem 1.25rem;
+        border-radius: 8px;
+        margin: 1.5rem 0;
+
+    }
     .callout-blue {
         background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
         border-left: 5px solid #3b82f6;
@@ -185,13 +193,19 @@ col3.metric("Mean HDI", f"{df['HDI'].mean():.3f}")
 col4.metric("Mean Life Exp.", f"{df['LifeExp'].mean():.1f} yrs")
 
 st.markdown("""
+<div class="callout_2">
+</b> Air pollution is an important problem the world is facing today that can lead to severe 
+health consequences. In this project I wanted to invesitgate the relationship between air pollution by the means of 
+PM2.5( particules that have a diamter smaller than 2.5 micrometers) and life expectation. I also wanted to see whether a 
+better HDI ( Human Development Index) can prevent effects of air pollution.
+</div>
+""", unsafe_allow_html=True)
+
+st.markdown("""
 <div class="callout">
-<b>The puzzle:</b> Across the world, polluted countries have shorter
-life expectancy. Easy story, right? But polluted countries also tend
-to be poorer. So which is it &mdash; pollution killing people, or
-under&#8209;development killing people? This page works through that
+This page works through that
 question with EDA, hypothesis tests, regression, and a few ML methods,
-and you can re&#8209;run everything live by toggling the controls in the
+and you can re&#8209; you can run everything live by toggling the controls in the
 sidebar.
 </div>
 """, unsafe_allow_html=True)
