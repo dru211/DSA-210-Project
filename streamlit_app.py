@@ -59,7 +59,7 @@ st.markdown("""
         margin: 1.5rem 0;
         font-size: 1.02rem;
     }
-    .callout {
+    .callout_2 {
         background: linear-gradient(135deg, #f3f4e8 0%, #e0e3c8 100%);
         border-left: 5px solid #84a02b;
         padding: 1rem 1.25rem;
@@ -205,7 +205,7 @@ st.markdown("""
 <div class="callout">
 This page works through that
 question with EDA, hypothesis tests, regression, and a few ML methods,
-and you can re&#8209; you can run everything live by toggling the controls in the
+and you can re&#8209; run everything live by toggling the controls in the
 sidebar.
 </div>
 """, unsafe_allow_html=True)
