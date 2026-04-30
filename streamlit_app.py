@@ -58,15 +58,16 @@ st.markdown("""
         border-radius: 8px;
         margin: 1.5rem 0;
         font-size: 1.02rem;
-        !important;
+        color: #1f2937 !important;
     }
+    .callout * { color: #1f2937 !important; }
     .callout_2 {
         background: linear-gradient(135deg, #f3f4e8 0%, #e0e3c8 100%);
         border-left: 5px solid #84a02b;
         padding: 1rem 1.25rem;
         border-radius: 8px;
         margin: 1.5rem 0;
-        !important;
+        color: #1f2937 !important;
 
     }
     .callout-blue {
@@ -75,7 +76,7 @@ st.markdown("""
         padding: 1rem 1.25rem;
         border-radius: 8px;
         margin: 1.5rem 0;
-        !important;
+        color: #1f2937 !important;
     }
     .callout-green {
         background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
@@ -83,7 +84,7 @@ st.markdown("""
         padding: 1rem 1.25rem;
         border-radius: 8px;
         margin: 1.5rem 0;
-        !important;
+        color: #1f2937 !important;
     }
     .callout-red {
         background: linear-gradient(135deg, #fef2f2 0%, #fecaca 100%);
@@ -91,7 +92,7 @@ st.markdown("""
         padding: 1rem 1.25rem;
         border-radius: 8px;
         margin: 1.5rem 0;
-        !important;
+        color: #1f2937 !important;
     }
 
     /* Tab styling - bigger, bolder */
@@ -181,9 +182,9 @@ if len(df) < 10:
 # =============================================================
 # HEADER
 # =============================================================
-st.markdown("#  Does air pollution actually shorten lives?")
+st.markdown("#  How important is the air pollution for long lives?")
 st.markdown(
-    "### Or does development do all the work? &nbsp;"
+    "### Does it not matter if the country is developed? &nbsp;"
     "<span style='color:#888;font-weight:400;'>"
     "An interactive look at PM2.5, HDI and life expectancy across "
     f"{len(df)} countries in 2020.</span>",
