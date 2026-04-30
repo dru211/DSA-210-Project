@@ -116,11 +116,11 @@ HDI_PALETTE  = {"Low": "#ef4444", "Medium": "#f59e0b",
 # SIDEBAR - filters
 # =============================================================
 with st.sidebar:
-    st.markdown("## 🎛️ Controls")
+    st.markdown("## Controls")
     st.caption("Every chart, test, and metric on the page recomputes "
                "live from these filters.")
 
-    st.markdown("### 🇶🇦 Gulf states")
+    st.markdown("### Gulf states")
     exclude_gulf = st.toggle(
         "Exclude Gulf countries",
         value=False,
@@ -130,13 +130,13 @@ with st.sidebar:
               "you turn this on!")
     )
 
-    st.markdown("### 🌎 Regions")
+    st.markdown("### Regions")
     regions = sorted(df_full["Region"].dropna().unique().tolist())
     selected_regions = st.multiselect(
         "Include regions:", regions, default=regions
     )
 
-    st.markdown("### 📊 HDI groups")
+    st.markdown("### HDI groups")
     selected_hdi = st.multiselect(
         "Include HDI groups:",
         HDI_ORDER, default=HDI_ORDER
@@ -161,14 +161,14 @@ df = df[df["HDI_Group"].isin(selected_hdi)]
 df = df.reset_index(drop=True)
 
 if len(df) < 10:
-    st.error("⚠️ Too few countries selected — pick more regions or HDI groups.")
+    st.error(" Too few countries selected — pick more regions or HDI groups.")
     st.stop()
 
 
 # =============================================================
 # HEADER
 # =============================================================
-st.markdown("# 🌍 Does air pollution actually shorten lives?")
+st.markdown("#  Does air pollution actually shorten lives?")
 st.markdown(
     "### Or does development do all the work? &nbsp;"
     "<span style='color:#888;font-weight:400;'>"
@@ -201,12 +201,12 @@ sidebar.
 # TABS
 # =============================================================
 tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
-    "📊 The data",
-    "🔗 Relationships",
-    "🧪 Hypothesis tests",
-    "📈 Regression",
-    "🤖 Machine learning",
-    "🔍 Country explorer",
+    " The data",
+    " Relationships",
+    " Hypothesis tests",
+    " Regression",
+    " Machine learning",
+    " Country explorer",
 ])
 
 
@@ -258,7 +258,7 @@ with tab1:
                       title="Life Expectancy by HDI group")
     c2.plotly_chart(fig, use_container_width=True)
 
-    with st.expander("📋 Numeric summary"):
+    with st.expander(" Numeric summary"):
         st.dataframe(
             df[["PM2_5", "HDI", "LifeExp"]].describe().round(3),
             use_container_width=True
@@ -333,7 +333,7 @@ with tab3:
     st.caption("All p-values are recomputed live from the current filter selection.")
 
     def verdict(p, a=0.05):
-        return "✅ Reject H₀" if p < a else "❌ Fail to reject H₀"
+        return " Reject H₀" if p < a else " Fail to reject H₀"
 
     # Correlation tests
     st.markdown("### Correlation tests")
@@ -530,7 +530,7 @@ with tab5:
     st.markdown("## Random Forest, K-Means and PCA")
 
     # ---- RANDOM FOREST ----
-    st.markdown("### 🌲 Random Forest — feature importance")
+    st.markdown("###  Random Forest — feature importance")
     st.caption("Non-parametric corroboration of the linear regression. "
                "If HDI dominates here too, the conclusion is robust.")
 
@@ -563,7 +563,7 @@ with tab5:
     c2.plotly_chart(fig, use_container_width=True)
 
     # ---- K-MEANS ----
-    st.markdown("### 🎯 K-Means clustering")
+    st.markdown("###  K-Means clustering")
     st.caption("Standardised features: [PM2.5, HDI, LifeExp]. "
                "Elbow + silhouette tell us how many clusters the data "
                "naturally has.")
@@ -615,7 +615,7 @@ with tab5:
     st.dataframe(centers_df.round(2), use_container_width=True)
 
     # ---- PCA ----
-    st.markdown("### 📐 PCA — 2D summary")
+    st.markdown("###  PCA — 2D summary")
     st.caption("Project the 3 standardised features into 2D so the entire "
                "dataset fits in one chart.")
 
