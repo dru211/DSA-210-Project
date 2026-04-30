@@ -58,6 +58,7 @@ st.markdown("""
         border-radius: 8px;
         margin: 1.5rem 0;
         font-size: 1.02rem;
+        !important;
     }
     .callout_2 {
         background: linear-gradient(135deg, #f3f4e8 0%, #e0e3c8 100%);
@@ -65,6 +66,7 @@ st.markdown("""
         padding: 1rem 1.25rem;
         border-radius: 8px;
         margin: 1.5rem 0;
+        !important;
 
     }
     .callout-blue {
@@ -73,6 +75,7 @@ st.markdown("""
         padding: 1rem 1.25rem;
         border-radius: 8px;
         margin: 1.5rem 0;
+        !important;
     }
     .callout-green {
         background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
@@ -80,6 +83,7 @@ st.markdown("""
         padding: 1rem 1.25rem;
         border-radius: 8px;
         margin: 1.5rem 0;
+        !important;
     }
     .callout-red {
         background: linear-gradient(135deg, #fef2f2 0%, #fecaca 100%);
@@ -87,6 +91,7 @@ st.markdown("""
         padding: 1rem 1.25rem;
         border-radius: 8px;
         margin: 1.5rem 0;
+        !important;
     }
 
     /* Tab styling - bigger, bolder */
